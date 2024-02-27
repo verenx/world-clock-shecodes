@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src\styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.js"></script>
     <title>Verena's World Clock</title>
   </head>
   <body>
@@ -15,19 +17,19 @@
         <option value="">Linz</option>
         <option value="">Innsbruck</option>
       </select>
-      <div class="city">
-        <div>
-          <h2>Baghdad</h2>
-          <div class="date">Augst 25th 2012</div>
-        </div>
-        <div class="time">1:48:15 <small>AM</small></div>
-      </div>
-      <div class="city">
+      <div class="city" id="vienna">
         <div>
           <h2>Vienna</h2>
-          <div class="date">Augst 25th 2012</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
+        <div class="time"></div>
+      </div>
+      <div class="city" id="perth">
+        <div>
+          <h2>Perth</h2>
+          <div class="date"></div>
+        </div>
+        <div class="time"></div>
       </div>
     </div>
     <footer>

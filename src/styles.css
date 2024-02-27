@@ -6,7 +6,7 @@ body {
 .app-container {
   max-width: 500px;
   background: white;
-  margin: 60px auto;
+  margin: 60px auto 30px;
   padding: 10px 30px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -61,4 +61,6 @@ h2 {
 footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
+  padding: 0 30px 30px;
+  font-size: 14px;
 }
