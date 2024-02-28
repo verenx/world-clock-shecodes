@@ -38,9 +38,14 @@ function updateDateTime() {
 
 function displayNewCity(event) {
   let newCity = event.target.value;
+  if (newCity === "current-location") {
+    newCity = moment.tz.guess();
+  }
   let cityName = newCity.split("/")[1].replace("_", " ").replace("ome", "omé");
+
   let newCityTz = moment().tz(newCity);
   let newCityElement = document.querySelector("#cities-displayed");
+
   newCityElement.innerHTML = `<div class="city">
         <div>
           <h2>${cityName}</h2>
@@ -53,6 +58,7 @@ function displayNewCity(event) {
 }
 
 setInterval(updateDateTime, 1000);
+
 updateDateTime();
 
 let citiesSelectElement = document.querySelector("#cities");
