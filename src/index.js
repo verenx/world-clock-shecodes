@@ -34,6 +34,24 @@ function updateDateTime() {
     perthDateElement.innerHTML = perthCurrentDate;
     perthTimeElement.innerHTML = perthCurrentTime;
   }
+
+  // Honolulu
+  let honoluluElement = document.querySelector("#honolulu");
+  if (honoluluElement) {
+    let honoluluDateElement = honoluluElement.querySelector(".date");
+    let honoluluTimeElement = honoluluElement.querySelector(".time");
+
+    let honoluluCurrentTz = moment().tz("Pacific/Honolulu");
+
+    let honoluluCurrentDate = honoluluCurrentTz.format("MMMM Do YYYY");
+    let honoluluCurrentTime = `${honoluluCurrentTz.format(
+      "h:mm:ss"
+    )} <small>${honoluluCurrentTz.format("A")}</small>`;
+    // format("h:mm:ss[<small>A[</small>]")
+
+    honoluluDateElement.innerHTML = honoluluCurrentDate;
+    honoluluTimeElement.innerHTML = honoluluCurrentTime;
+  }
 }
 
 function displayNewCity(event) {
