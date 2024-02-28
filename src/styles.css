@@ -1,13 +1,13 @@
 body {
-  background: #f9f7fe;
+  background: #e3d2c5;
   font-family: sans-serif;
 }
 
 .app-container {
   max-width: 500px;
-  background: white;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   margin: 60px auto 30px;
-  padding: 10px 30px;
+  padding: 20px 30px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -16,6 +16,7 @@ h1 {
   text-align: center;
   font-size: 36px;
   font-weight: 900;
+  color: #271000;
 }
 
 select {
@@ -63,4 +64,8 @@ footer {
   color: rgba(0, 0, 0, 0.8);
   padding: 0 30px 30px;
   font-size: 14px;
+}
+
+a {
+  color: #271000;
 }

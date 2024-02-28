@@ -55,7 +55,7 @@ function displayNewCity(event) {
           "h:mm:ss"
         )} <small>${newCityTz.format("A")}</small></div>
       </div>
-      <a href="/">Back to list of all cites</a>`;
+      <a href="/" class="homepage">Back to list of all cites</a>`;
 }
 
 setInterval(updateDateTime, 1000);
