@@ -54,11 +54,11 @@ function displayNewCity(event) {
         <div class="time">${newCityTz.format(
           "h:mm:ss"
         )} <small>${newCityTz.format("A")}</small></div>
-      </div>`;
+      </div>
+      <a href="/">Back to list of all cites</a>`;
 }
 
 setInterval(updateDateTime, 1000);
-
 updateDateTime();
 
 let citiesSelectElement = document.querySelector("#cities");
